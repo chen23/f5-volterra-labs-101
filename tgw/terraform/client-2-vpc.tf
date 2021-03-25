@@ -104,6 +104,13 @@ resource "aws_route" "client-2-gateway" {
   depends_on             = [aws_route_table.client-2-vpc-external-rt]
 }
 
+resource "aws_route" "client-2" {
+  route_table_id         = aws_route_table.client-2-vpc-external-rt.id
+  destination_cidr_block = "192.168.16.0/20"
+  vpc_peering_connection_id = aws_vpc_peering_connection.client-2.id
+}
+
+
 resource "aws_route_table_association" "client-2-management-1" {
   subnet_id      = aws_subnet.client-2-management-1.id
   route_table_id = aws_route_table.client-2-vpc-external-rt.id
@@ -125,6 +132,14 @@ resource "aws_security_group" "client-2-vpc" {
     protocol    = "-1"
     cidr_blocks = ["10.0.0.0/8"]
   }
+
+  ingress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["192.168.0.0/16"]
+  }
+
 
   ingress {
     from_port   = 0

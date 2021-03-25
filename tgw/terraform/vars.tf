@@ -20,4 +20,4 @@ variable "trusted_ip" {
   description = "IP address of trusted source for mgmt/testing"
 }
 
-variable tgw_id {}
+#variable tgw_id {}
