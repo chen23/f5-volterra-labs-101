@@ -28,8 +28,15 @@ snap install docker
 systemctl enable snap.docker.dockerd
 systemctl start snap.docker.dockerd
 sleep 30
-docker run -d -p 80:80 --net host -e F5DEMO_APP=website -e F5DEMO_NODENAME="AWS Environment (Jumphost)" --restart always --name f5demoapp f5devcentral/f5-demo-httpd:nginx
-              EOF
+docker run -d  --net=host --restart=always \
+	-e F5DEMO_APP=website \
+	-e F5DEMO_NODENAME='Public Endpoint' \
+	-e F5DEMO_COLOR=0194d2 \
+	-e F5DEMO_NODENAME_SSL='AWS Environment (Backend App)' \
+	-e F5DEMO_COLOR_SSL=004892 \
+	-e F5DEMO_BRAND=volterra \
+	f5devcentral/f5-demo-httpd:nginx
+  EOF
 
   tags = {
     Name = "${var.prefix}-f5-volterra-networking-jumphost-1"
