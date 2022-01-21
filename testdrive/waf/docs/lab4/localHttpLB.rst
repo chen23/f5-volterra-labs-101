@@ -52,7 +52,7 @@ we could opt to use the "Inside" interface that does not have an AWS EIP attache
 #. Next to "Custom Advertise VIP Configuration" click on "Show Advanced Fields"
 #. Click on "Add Item"
 #. For "Site Network" click on "Outside Network" 
-#. For "Site Reference" select `student-awsnet`
+#. For "Site Reference" select |aws_site|
 
    .. image:: ../_static/lb-local-vip-advertise.png
       :width: 75%

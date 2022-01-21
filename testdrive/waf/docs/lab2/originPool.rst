@@ -74,18 +74,4 @@ We will first create an Origin Pool that refers to the "Public Endpoint" site in
 #. Click the *Save and Exit* button to create the Origin Pool.
 
 .. |app-context| image:: ../_static/app-context.png
-.. |origin_pools_menu| image:: ../_static/origin_pools_menu.png
-.. |origin_pools_add| image:: ../_static/origin_pools_add.png
-.. |origin_pools_config| image:: ../_static/origin_pools_config.png
-.. |origin_pools_config_api| image:: ../_static/origin_pools_config_api.png
-.. |origin_pools_config_mongodb| image:: ../_static/origin_pools_config_mongodb.png
-.. |origin_pools_show_child_objects| image:: ../_static/origin_pools_show_child_objects.png
-.. |origin_pools_show_child_objects_status| image:: ../_static/origin_pools_show_child_objects_status.png
-.. |http_lb_origin_pool_health_check| image:: ../_static/http_lb_origin_pool_health_check.png
-.. |http_lb_origin_pool_health_check2| image:: ../_static/http_lb_origin_pool_health_check2.png
-
-.. |op-add-pool| image:: ../_static/op-add-pool.png
-.. |op-api-pool| image:: ../_static/op-api-pool.png
 .. |op-pool-basic| image:: ../_static/op-pool-basic.png
-.. |op-spa-check| image:: ../_static/op-spa-check.png
-.. |op-tshoot| image:: ../_static/op-tshoot.png

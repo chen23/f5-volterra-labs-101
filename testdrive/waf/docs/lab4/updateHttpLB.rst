@@ -28,7 +28,7 @@ Exercise 1: HTTP Load Balancer Configuration
 #. Click "*Save and Exit* to update the HTTP Load Balancer.
 
 You should now be able to go to the DNS name that you entered 
-previously in a web browser.  The FQDN we used in our example is http://studentXX.sales-public.f5demos.com.  
+previously in a web browser.  The FQDN we used in our example is |tenant_domain|.  
 
 Exercise 5: Verify Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

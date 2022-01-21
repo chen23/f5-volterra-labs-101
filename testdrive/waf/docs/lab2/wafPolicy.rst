@@ -20,6 +20,13 @@ We will create a blocking WAF policy.
 
     |app-context|
 
+#. If you have access to multiple namespaces you will need to select your namespace (skip if you do not see Namespace below "Web App and API Protection")
+    #. First click on "namespace"
+    #. In the search enter your namespace (i.e. f-name)
+    #. Select your namespace (do **NOT** use default)
+   
+   .. image:: ../_static/select-namespace.png
+
 #. Navigate the menu to go to "Manage"->"App Firewall". Click on *Add App Firewall*.
 
 

@@ -20,7 +20,7 @@ Exercise 1: HTTP Load Balancer Configuration
     Variable                          Value
     ================================= =====
     Name                              global
-    Domains                           studentXXX.sales-public.f5demos.com
+    Domains                           |tenant_domain|
     Select type of Load Balancer      HTTP
     Automatically Manage DNS Records  Yes/Check 
     ================================= =====
@@ -58,7 +58,7 @@ Exercise 3: Configure WAF Policy
 #. Click "*Save and Exit* to create the HTTP Load Balancer.
 
 Once the HTTP Load Balancer has been deployed, you should now be able to go to the DNS name that you entered 
-previously in a web browser.  The FQDN we used in our example is http://studentXX.sales-public.f5demos.com.  
+previously in a web browser.  The FQDN we used in our example is |tenant_domain|.  
 Your FQDN should follow the format of [unique name].[supplied domain name for your tenant].
 
 .. note:: If you are having challenges connecting to the "f5demos.com" name you can also try connecting to the "ves.io" name.

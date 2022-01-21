@@ -17,7 +17,7 @@ We can use the reported support ID to disable specific signatures.  Copy the val
 Exercise 1: Generate Cross Site Scripting (XSS)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Send the following request to your `studentxxx.sales-public.f5demos.com` site
+#. Send the following request to your |tenant_domain| site
 
    ``/headers/?username=<script>window.open(%27hello%20world%27);</script>``
 
@@ -57,7 +57,7 @@ Exercise 2: Creating WAF Exclusion Rule
    For example searching for "200000091" should return a "XSS script tag end (Headers)" signature.
 #. Click on "Apply" you will now be taken into the HTTP Load Balancer configuration and you should see under "WAF Exclusion Rules" it should show as "Configured"
 #. Scroll to the bottom of the page and click on "Save and Exit"
-#. Retry visiting your site with the same URL to your `studentxxx.sales-public.f5demos.com` site
+#. Retry visiting your site with the same URL to your |tenant_domain| site
 
    ``/headers/?username=<script>window.open(%27hello%20world%27);</script>``
 
@@ -73,7 +73,7 @@ the requests log.
    
    .. image:: ../_static/requests-policy-exclusion.png
       :width: 50%
-#. Try visiting your site with the a different URL to your `studentxxx.sales-public.f5demos.com` site
+#. Try visiting your site with the a different URL to your |tenant_domain| site
    ``/txt/?username=<script>window.open(%27hello%20world%27);</script>``
 #. Observe that this request is blocked.  Volterra WAF can exclude signatures by both signature ID and path; and these exclusions are tied to a specific HTTP Load Balancer
 

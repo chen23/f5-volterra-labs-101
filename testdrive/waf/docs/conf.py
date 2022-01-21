@@ -60,6 +60,11 @@ html_sidebars = {'**': ['searchbox.html', 'localtoc.html', 'globaltoc.html']}
 import json
 
 aws_region = "us-west-2"
+volterra_tenant = "f5-sales-public"
+aws_site = "shared-lab-awsnet"
+wildcard_dns = ".aws.lab.f5demos.com"
+student_name = "**[your namespace]**"
+tenant_domain = "**[your namespace].f5-amer-ent.f5demos.com**"
 try:
     f = open('../terraform/terraform.auto.tfvars.json')
     d = json.load(f)
@@ -69,5 +74,10 @@ except:
 rst_prolog = """
 .. |aws_region| replace:: %s
 .. |aws_zone| replace:: %sa
-""" %(aws_region,aws_region)
+.. |student_name| replace:: %s
+.. |volterra_tenant| replace:: %s
+.. |aws_site| replace:: %s
+.. |wildcard_dns| replace:: %s
+.. |tenant_domain| replace:: %s
+""" %(aws_region,aws_region,student_name,volterra_tenant,aws_site,wildcard_dns, tenant_domain)
 

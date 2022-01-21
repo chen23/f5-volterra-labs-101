@@ -57,6 +57,10 @@ Exercise 3: Identity your Namespace
    clicking on "Account Settings"
 
    .. image:: ../_static/screenshot-account-settings.png
-#. Next click on "My Namespaces" and take note of the `studentxxx` namespace that you have been assigned.  Each student will have a unique number.
+
+#. Next click on "My Namespaces" and take note of the |student_name| namespace that you have been assigned.  Each student will have a unique namespace.
 
    .. image:: ../_static/screenshot-mynamespaces.png 
+
+  .. tip:: If you see more than one namespace then you are likely an F5 employee and are using a shared Volterra Tenant.
+            In that case your tenant will match your email ID.  i.e. f.lname@f5.com would have a namespace of "f-lname" (replace "." with "-")

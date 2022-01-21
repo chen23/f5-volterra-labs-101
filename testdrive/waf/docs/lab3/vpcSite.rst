@@ -32,7 +32,7 @@ Exercise 1: Introduction to Volterra AWS VPC Site
 #. Find the "student-awsnet" site
 
    In this lab environment we have already deployed a shared AWS VPC Site that we will 
-   use in this lab.  Click on the "student-awsnet"
+   use in this lab.  Click on the "|aws_site|"
 
    You will be able to observe several metrics about the health of the site.
 
